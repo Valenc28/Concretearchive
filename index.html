@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Concrete Archive — Brutalist Architecture</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#home">
+                CONCRETE<span>ARCHIVE.</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent" aria-controls="navbarContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#collection">Collection</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3">
+                        <button class="nav-contact" data-bs-toggle="modal"
+                            data-bs-target="#myModal">
+                            Submit a building +
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <header id="home">
+
+        <div class="hero-topline">
+            <span>ARCHITECTURE / CULTURE / MEMORY</span>
+            <span>DIGITAL ARCHIVE — VOL. 01</span>
+        </div>
+
+        <div class="hero-content">
+            <p class="eyebrow">A STUDY OF BRUTALIST ARCHITECTURE</p>
+
+            <h1>
+                CONCRETE
+                <span>ARCHIVE.</span>
+            </h1>
+
+            <div class="hero-intro">
+                <p>
+                    Exploring the material, forms and stories behind
+                    some of the most significant brutalist buildings
+                    around the world.
+                </p>
+
+                <a href="#collection" class="main-button">
+                    EXPLORE THE COLLECTION
+                    <i class="bi bi-arrow-down-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+    <img src="img/hero.jpg" alt="Brutalist architecture">
+    <img src="img/hero-2.jpg" alt="Concrete architectural detail">
+</div>
+
+        <div class="hero-caption">
+            <span>FIG. 001 — CONCRETE AS A MATERIAL</span>
+            <span>20° / 11° / 2026</span>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- COLLECTION -->
+        <section id="collection">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">01 / THE ARCHIVE</p>
+                    <h2>SELECTED<br>STRUCTURES<span>.</span></h2>
+                </div>
+
+                <div class="collection-description">
+                    <p>
+                        Four architectural works that explore the
+                        expressive possibilities of concrete.
+                    </p>
+                    <span>04 BUILDINGS / 04 STORIES</span>
+                </div>
+            </div>
+
+            <div class="row collection-layout">
+
+                <!-- BUILDING MENU -->
+                <div class="col-lg-4">
+                    <div class="collection-menu">
+                        <p class="menu-label">INDEX / 001—004</p>
+                        <div id="menu-nav">
+                            <p class="loading-text">Loading collection...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BUILDING DETAILS -->
+                <div class="col-lg-8">
+                    <div id="building-details">
+                        <p class="loading-text">Select a building to explore.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ABOUT -->
+        <section id="about">
+
+            <div class="about-topline">
+                <span>02 / ABOUT THE ARCHIVE</span>
+                <span>FORM FOLLOWS MATERIAL</span>
+            </div>
+
+            <div class="row align-items-center about-layout">
+
+                <div class="col-lg-6">
+                    <p class="eyebrow">A VISUAL RESEARCH PROJECT</p>
+
+                    <h2>BEYOND<br>THE SURFACE<span>.</span></h2>
+
+                    <p class="about-text">
+                        Concrete Archive is a digital collection dedicated
+                        to brutalist architecture. Through selected
+                        buildings, it explores the relationship between
+                        material, structure, space and the urban landscape.
+                    </p>
+
+                    <p class="about-text">
+                        Each project is presented as part of a wider
+                        architectural conversation about form, permanence
+                        and collective memory.
+                    </p>
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="img/about.jpg" alt="Concrete architectural detail">
+                    <p class="image-caption">FIG. 002 — MATERIAL STUDY</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-main">
+            <h2>CONCRETE<br>ARCHIVE<span>.</span></h2>
+
+            <a href="#home">
+                BACK TO TOP <i class="bi bi-arrow-up-right"></i>
+            </a>
+        </div>
+
+        <div class="footer-bottom">
+            <span>BRUTALIST ARCHITECTURE / DIGITAL ARCHIVE</span>
+            <span>© 2026 CONCRETE ARCHIVE</span>
+        </div>
+    </footer>
+
+
+    <!-- CONTACT MODAL -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <div>
+                        <p class="eyebrow">CONTRIBUTE TO THE ARCHIVE</p>
+                        <h2 class="modal-title" id="modalTitle">SUBMIT A BUILDING</h2>
+                    </div>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <form action="https://api.web3forms.com/submit"
+                        method="POST" class="needs-validation" novalidate>
+
+                        <!-- KEEP YOUR EXISTING WORKING ACCESS KEY HERE -->
+                        <input type="hidden" name="access_key" value="f5540e3a-5db3-46f5-b973-a95e86b385f7">
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your name</label>
+                            <input type="text" class="form-control" id="name"
+                                name="name" required>
+                            <div class="invalid-feedback">Please enter your name.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="building" class="form-label">Building name</label>
+                            <input type="text" class="form-control" id="building"
+                                name="building" required>
+                            <div class="invalid-feedback">Please enter a building name.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="location" class="form-label">Location</label>
+                            <input type="text" class="form-control" id="location"
+                                name="location" required>
+                            <div class="invalid-feedback">Please enter a location.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email"
+                                name="email" required>
+                            <div class="invalid-feedback">Please enter a valid email.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Why should it be included?</label>
+                            <textarea class="form-control" id="message"
+                                name="message" rows="4" required></textarea>
+                            <div class="invalid-feedback">Please write a message.</div>
+                        </div>
+
+                        <button type="submit" class="main-button form-button">
+                            SEND SUBMISSION <i class="bi bi-arrow-up-right"></i>
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/code.js"></script>
+
+</body>
+</html>

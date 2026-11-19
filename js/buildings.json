@@ -1,0 +1,39 @@
+
+[
+    {
+        "title": "SESC Pompeia",
+        "location": "São Paulo, Brazil",
+        "architect": "Lina Bo Bardi",
+        "year": "1982",
+        "description": "A cultural and recreational complex that transforms an old industrial factory into a vibrant public space. Its exposed concrete towers, bridges and open circulation create a strong relationship between architecture and everyday life.",
+        "image": "img/sesc-pompeia.jpg",
+        "destination": "https://www.archdaily.com/es/02-90181/clasicos-de-arquitectura-sesc-pompeia-lina-bo-bardi"
+    },
+    {
+        "title": "Trellick Tower",
+        "location": "London, United Kingdom",
+        "architect": "Erno Goldfinger",
+        "year": "1972",
+        "description": "A residential tower defined by its sculptural concrete structure and expressive service tower. Its strong vertical presence became one of the most recognizable examples of British brutalist housing.",
+        "image": "img/trellick-tower.jpg",
+        "destination": "https://historicengland.org.uk/listing/the-list/list-entry/1246688"
+    },
+    {
+        "title": "National Assembly",
+        "location": "Dhaka, Bangladesh",
+        "architect": "Louis Kahn",
+        "year": "1982",
+        "description": "A monumental architectural complex where geometric forms, massive concrete walls and carefully composed openings create a powerful relationship between light, space and civic identity.",
+        "image": "img/national-assembly.jpg",
+        "destination": "https://the.akdn/en/how-we-work/our-agencies/aga-khan-trust-culture/akaa/national-assembly-building"
+    },
+    {
+        "title": "Barbican Estate",
+        "location": "London, United Kingdom",
+        "architect": "Chamberlin, Powell and Bon",
+        "year": "1976",
+        "description": "An extensive residential and cultural complex combining elevated walkways, towers, gardens and textured concrete surfaces. Its urban scale creates an interconnected architectural landscape.",
+        "image": "img/barbican.jpg",
+        "destination": "https://www.barbican.org.uk/our-story/our-archive"
+    }
+]
