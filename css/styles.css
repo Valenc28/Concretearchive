@@ -1,11 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
 
-/* ================================
-   CONCRETE ARCHIVE
-   COLOR + TYPOGRAPHY SYSTEM
-================================ */
-
 :root {
     --blue-dark: #202B38;
     --blue-steel: #536D86;
@@ -36,16 +31,23 @@ body {
     background-color: var(--gray-paper);
     color: var(--blue-dark);
     font-family: var(--font-body);
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 a {
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--blue-steel);
 }
 
 img {
     max-width: 100%;
 }
+
+/* SMALL EDITORIAL TEXT */
 
 .eyebrow {
     color: var(--blue-steel);
@@ -61,7 +63,7 @@ img {
 .navbar {
     background-color: var(--blue-dark) !important;
     padding: 19px 6%;
-    border-bottom: 1px solid rgba(255,255,255,0.15);
+    border-bottom: 1px solid var(--gray-medium);
 }
 
 .navbar-brand {
@@ -139,7 +141,7 @@ img {
 
 .hero-topline {
     color: var(--gray-blue);
-    border-bottom: 1px solid rgba(255,255,255,0.25);
+    border-bottom: 1px solid var(--gray-blue);
     padding-bottom: 17px;
 }
 
@@ -155,10 +157,10 @@ img {
 .hero-content h1 {
     color: var(--white);
     font-family: var(--font-display);
-    font-size: clamp(3.7rem, 10vw, 9rem);
+    font-size: 6rem;
     font-weight: 800;
     letter-spacing: -0.09em;
-    line-height: 0.78;
+    line-height: 0.9;
     margin: 0;
 }
 
@@ -216,21 +218,20 @@ img {
 
 .hero-image img {
     display: block;
-    width: calc(50% - 6px);
+    width: 50%;
     height: 500px;
-    flex: 0 0 calc(50% - 6px);
     object-fit: cover;
     object-position: center;
 }
 
 .hero-caption {
     color: var(--gray-blue);
-    border-top: 1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid var(--gray-blue);
     margin-top: 18px;
     padding-top: 15px;
 }
 
-/* COLLECTION */
+
 
 #collection {
     background-color: var(--gray-paper);
@@ -249,10 +250,10 @@ img {
 #about h2 {
     color: var(--blue-dark);
     font-family: var(--font-display);
-    font-size: clamp(3rem, 7vw, 6.5rem);
+    font-size: 4.5rem;
     font-weight: 800;
     letter-spacing: -0.08em;
-    line-height: 0.85;
+    line-height: 0.95;
     margin: 18px 0 0;
 }
 
@@ -326,11 +327,11 @@ img {
     padding: 20px 0;
 }
 
-/* BUILDING DETAILS */
+
 
 #building-details {
     background-color: var(--white);
-    border: 1px solid #D7DDE1;
+    border: 1px solid var(--gray-blue);
     min-height: 400px;
 }
 
@@ -349,11 +350,11 @@ img {
 #building-details h2 {
     color: var(--blue-dark);
     font-family: var(--font-display);
-    font-size: clamp(2.1rem, 4vw, 4rem);
+    font-size: 3.2rem;
     font-weight: 800;
     letter-spacing: -0.07em;
     line-height: 1.2;
-    margin: 24px;
+    margin: 24px 0;
 }
 
 #building-details img {
@@ -364,7 +365,6 @@ img {
     object-fit: contain;
     background-color: var(--gray-light);
     margin-bottom: 25px;
-    
 }
 
 #building-details .card-body > p:not(.section-label) {
@@ -377,7 +377,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 15px 35px;
-    border-top: 1px solid #D7DDE1;
+    border-top: 1px solid var(--gray-blue);
     margin-top: 25px;
     padding-top: 20px;
 }
@@ -417,7 +417,6 @@ img {
     border-color: var(--blue-steel);
 }
 
-/* ABOUT */
 
 #about {
     background-color: #DCE2E7;
@@ -438,7 +437,7 @@ img {
 }
 
 #about h2 {
-    font-size: clamp(3.2rem, 7vw, 6rem);
+    font-size: 4.5rem;
     margin: 20px 0 35px;
 }
 
@@ -465,7 +464,7 @@ img {
     margin-top: 12px;
 }
 
-/* FOOTER */
+
 
 footer {
     background-color: var(--blue-dark);
@@ -484,10 +483,10 @@ footer {
 .footer-main h2 {
     color: var(--white);
     font-family: var(--font-display);
-    font-size: clamp(2.7rem, 7vw, 6rem);
+    font-size: 4rem;
     font-weight: 800;
     letter-spacing: -0.08em;
-    line-height: 0.85;
+    line-height: 0.95;
 }
 
 .footer-main a {
@@ -504,7 +503,7 @@ footer {
 
 .footer-bottom {
     color: var(--gray-blue);
-    border-top: 1px solid rgba(255,255,255,0.2);
+    border-top: 1px solid var(--gray-blue);
     padding-top: 20px;
 }
 
@@ -584,7 +583,7 @@ footer {
     }
 
     .hero-content h1 {
-        font-size: clamp(3.2rem, 13vw, 5.5rem);
+        font-size: 3.5rem;
     }
 
     .hero-intro {
@@ -592,8 +591,12 @@ footer {
         flex-direction: column;
     }
 
+    .hero-image {
+        height: 350px;
+    }
+
     .hero-image img {
-        max-height: none;
+        height: 350px;
         max-width: 100%;
     }
 
@@ -607,6 +610,11 @@ footer {
         margin-bottom: 40px;
     }
 
+    .section-heading h2,
+    #about h2 {
+        font-size: 3rem;
+    }
+
     .collection-layout {
         --bs-gutter-x: 0;
         row-gap: 35px;
@@ -614,6 +622,10 @@ footer {
 
     #building-details .card-body {
         padding: 22px;
+    }
+
+    #building-details h2 {
+        font-size: 2.2rem;
     }
 
     #building-details .card-footer {
