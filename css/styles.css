@@ -27,7 +27,7 @@ html {
 
 body {
     margin: 0;
-    background-color: var(--gray-paper);
+    background-color: var(--blue-dark);
     color: var(--blue-dark);
     font-family: var(--font-body);
     font-size: 1rem;
