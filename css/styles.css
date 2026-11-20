@@ -559,7 +559,12 @@ footer {
 
 /* RESPONSIVE */
 
+
 @media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
 
     .navbar {
         padding: 15px 5%;
@@ -575,29 +580,54 @@ footer {
     }
 
     #home {
+        width: 100%;
+        max-width: 100%;
         padding: 22px 6%;
+        overflow: hidden;
+    }
+
+    .hero-topline {
+        font-size: 0.55rem;
+        gap: 10px;
     }
 
     .hero-content {
-        padding: 65px 0 35px;
+        padding: 55px 0 35px;
     }
 
     .hero-content h1 {
-        font-size: 3.5rem;
+        font-size: clamp(2.4rem, 9vw, 3.5rem);
+        letter-spacing: -0.08em;
+        line-height: 0.95;
+        overflow-wrap: anywhere;
     }
 
     .hero-intro {
         align-items: flex-start;
         flex-direction: column;
+        gap: 25px;
+    }
+
+    .hero-intro p {
+        font-size: 0.95rem;
     }
 
     .hero-image {
-        height: 350px;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
     }
 
     .hero-image img {
-        height: 350px;
+        width: 100%;
+        height: 230px;
         max-width: 100%;
+    }
+
+    .hero-caption {
+        font-size: 0.55rem;
+        gap: 10px;
     }
 
     #collection {
