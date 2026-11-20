@@ -1,4 +1,3 @@
-
 let container = document.querySelector("#menu-nav");
 let details = document.querySelector("#building-details");
 
