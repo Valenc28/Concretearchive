@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
 
 
@@ -264,7 +265,7 @@ img {
 #about h2 {
     color: var(--blue-dark);
     font-family: var(--font-display);
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 800;
     letter-spacing: -0.07em;
     line-height: 0.95;
@@ -643,11 +644,12 @@ footer {
     .hero-content h1 {
         width: 100%;
         max-width: 100%;
-        font-size: clamp(2.4rem, 9vw, 3.5rem);
-        letter-spacing: -0.06em;
-        line-height: 1.05;
-        overflow-wrap: normal;
-        word-break: normal;
+        font-size: clamp(2rem, 7.5vw, 3rem);
+        letter-spacing: -0.09em;
+        line-height: 0.95;
+        transform: scaleX(0.88);
+        transform-origin: left center;
+        white-space: nowrap;
     }
 
     .hero-intro {
@@ -799,8 +801,9 @@ footer {
 @media (max-width: 380px) {
 
     .hero-content h1 {
-        font-size: 2.3rem;
-        letter-spacing: -0.05em;
+        font-size: 2rem;
+        letter-spacing: -0.09em;
+        transform: scaleX(0.88);
     }
 
     .section-heading h2,
