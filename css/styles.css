@@ -264,7 +264,7 @@ img {
 #about h2 {
     color: var(--blue-dark);
     font-family: var(--font-display);
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 800;
     letter-spacing: -0.07em;
     line-height: 0.95;
